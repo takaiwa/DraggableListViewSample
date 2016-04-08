@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytPattern"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9" >
+
+    <LinearLayout
+        android:id="@+id/lytPatternColor"
+        android:layout_width="16dp"
+        android:layout_height="72dp"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <LinearLayout
+            android:id="@+id/lytPatternColorDraw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytPatternText"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_toLeftOf="@+id/lytGrab"
+        android:layout_toRightOf="@+id/lytPatternColor"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="16dp" >
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/textViewTimeRange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:paddingRight="8dp"
+            android:textColor="#666"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytGrab"
+        android:layout_width="wrap_content"
+        android:layout_height="72dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:paddingRight="16dp"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageViewGrab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_drag_drop" />
+    </LinearLayout>
+
+</RelativeLayout>
