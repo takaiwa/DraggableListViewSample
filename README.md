@@ -1,7 +1,7 @@
 # DraggableListViewSample
 This sample can be replaced by moving grabbed the row of the ListView.
 
-<img src="attach:DraggableListViewSample.gif">
+![Demo Image](https://github.com/takaiwa/DraggableListViewSample/blob/master/DraggableListViewSample.gif)
 
 # Reference
 I used the code below as reference.
